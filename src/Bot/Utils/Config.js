@@ -1,6 +1,7 @@
 import { createChatBotMessage } from "react-chatbot-kit";
 import BotAvatar from "../Component/BotAvatar";
 import Header from "../Component/Header";
+import UserAvatart from "../Component/UserAvatart";
 
 const config = {
   botName: "LearningBot",
@@ -15,9 +16,9 @@ const config = {
  
    botAvatar: (props) => <BotAvatar {...props} />,
    
-  //  botChatMessage: (props) => <MyCustomChatMessage {...props} />,
+  //  botChatMessage: (props) => <BotMessages {...props} />,
    
-  //  userAvatar: (props) => <MyCustomAvatar {...props} />,
+   userAvatar: (props) => <UserAvatart {...props} />,
    
   //  userChatMessage: (props) => <MyCustomUserChatMessage {...props} />
  },

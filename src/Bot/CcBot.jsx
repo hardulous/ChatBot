@@ -5,14 +5,14 @@ import config from "./Utils/Config";
 import MessageParser from "./Utils/MessageParser";
 import ActionProvider from "./Utils/ActionProvider";
 import { BotContext } from "./Utils/BotContext";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { Avatar, IconButton } from "@material-ui/core";
 import img from "../cclogo.jpg";
 import { FaRobot } from "react-icons/fa";
 
 function CcBot() {
   const { openBot, setopenBot } = useContext(BotContext);
-
+ 
   return (
     <>
       <div className="App">

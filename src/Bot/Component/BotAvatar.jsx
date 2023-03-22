@@ -4,11 +4,12 @@ import { FaRobot } from "react-icons/fa";
 import img from "../../cclogo.jpg";
 
 const BotAvatar = () => {
+  
   return (
     <>
-      <IconButton className="botBtn2" size="medium" disableFocusRipple disableTouchRipple>
-        <FaRobot />
-      </IconButton>
+      <Avatar variant="circular" className="botAvatar">
+        <FaRobot/>
+      </Avatar>
     </>
   );
 };
