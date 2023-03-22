@@ -5,7 +5,7 @@ import config from "./Utils/config";
 import MessageParser from "./Utils/MessageParser";
 import ActionProvider from "./Utils/ActionProvider";
 
-function App() {
+function ChatBot() {
   return (
     <div className="App">
       <Chatbot
@@ -17,4 +17,4 @@ function App() {
   );
 }
 
-export default App;
+export default ChatBot;

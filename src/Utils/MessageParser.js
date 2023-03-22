@@ -1,6 +1,9 @@
 import React from "react";
 
+// This message parser render everytime when user enter the input 
+
 const MessageParser = (props) => {
+
   const { children, actions } = props;
 
   console.log(props.children.props.state); // here this state contain all messages either come from user and bot and whatever initial state we pass in config.js
