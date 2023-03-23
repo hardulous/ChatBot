@@ -15,12 +15,15 @@ function CcBot() {
   const botRef = useRef();
 
   useEffect(() => {
-
-    if (openBot) botRef.current.classList.add("show");
-    else botRef.current.classList.remove("show");
-
+    const inp = document.querySelector(".react-chatbot-kit-chat-input");
+    if (openBot) {
+      botRef.current.classList.add("show");
+      inp.focus();
+    } else {
+      botRef.current.classList.remove("show");
+      inp.blur();
+    }
   }, [openBot]);
-
 
   return (
     <>

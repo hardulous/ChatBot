@@ -3,11 +3,14 @@ import React, { useEffect } from "react";
 const MessageParser = ({ children, actions }) => {
 
   useEffect(() => {
+    
+    console.log("hi")
     const inp = document.querySelector(".react-chatbot-kit-chat-input");
     const sendBtn = document.querySelector(".react-chatbot-kit-chat-btn-send");
     const form = document.querySelector(".react-chatbot-kit-chat-input-form");
     sendBtn.classList.add("disableSend");
     let val = "";
+
     form.addEventListener("keypress", (e1) => {
       if (!val && e1.key === "Enter") {
         e1.preventDefault();
@@ -28,6 +31,7 @@ const MessageParser = ({ children, actions }) => {
       sendBtn.addEventListener("click", (e3) => {
         if (val) sendBtn.classList.add("disableSend");
       });
+      
     });
   }, []);
 
