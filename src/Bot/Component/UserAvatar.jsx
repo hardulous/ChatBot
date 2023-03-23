@@ -2,7 +2,7 @@ import { Avatar } from "@material-ui/core";
 import React from "react";
 import { FaUser } from "react-icons/fa";
 
-const UserAvatart = () => {
+const UserAvatar = () => {
   return (
     <Avatar variant="circular" className="botAvatar">
       <FaUser/>
@@ -10,4 +10,4 @@ const UserAvatart = () => {
   );
 };
 
-export default UserAvatart;
+export default UserAvatar;

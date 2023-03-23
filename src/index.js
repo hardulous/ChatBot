@@ -8,11 +8,11 @@ import { BotProvider } from "./Bot/Utils/BotContext";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
-  <React.StrictMode>
+  <>
     {/* <ChatBot /> */}
     {/* <QuizBot/> */}
     <BotProvider>
       <CcBot />
     </BotProvider>
-  </React.StrictMode>
+  </>
 );
