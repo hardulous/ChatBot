@@ -20,7 +20,7 @@ const MessageParser = ({ children, actions }) => {
       }
 
       inp.addEventListener("input", (e2) => {
-        val = e2.target.value;
+        val = e2.target.value.trim();
         if (!Boolean(val)) {
           sendBtn.classList.add("disableSend");
         } else {
